@@ -1,11 +1,11 @@
  // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBKX1GXX2C_DBhXESSB3xtln6W8czM-TJY",
-    authDomain: "project1-marvelfaceapi.firebaseapp.com",
-    databaseURL: "https://project1-marvelfaceapi.firebaseio.com",
-    projectId: "project1-marvelfaceapi",
-    storageBucket: "project1-marvelfaceapi.appspot.com",
-    messagingSenderId: "259704712712"
+    apiKey: "", //Replace with Firebase snippet!
+    authDomain: "", //Replace with Firebase snippet!
+    databaseURL: "", //Replace with Firebase snippet!
+    projectId: "", //Replace with Firebase snippet!
+    storageBucket: "", //Replace with Firebase snippet!
+    messagingSenderId: "" //Replace with Firebase snippet!
   };
   firebase.initializeApp(config);
   var database = firebase.database();
@@ -151,7 +151,7 @@ function callAPIs(userImageUrl) {
         beforeSend: function(xhrObj){
             // Request headers
             xhrObj.setRequestHeader("Content-Type","application/json");
-            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","10f397a3144b4015b61663d5d274889c");
+            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key",""); // Requires API Key
         },
         type: "POST",
         // Request body
